@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/GenericClasses/GenericClasses.iml" filepath="$PROJECT_DIR$/GenericClasses/GenericClasses.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaConcepts.iml" filepath="$PROJECT_DIR$/JavaConcepts.iml" />
+    </modules>
+  </component>
+</project>
