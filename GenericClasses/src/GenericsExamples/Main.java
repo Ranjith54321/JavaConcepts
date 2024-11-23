@@ -1,6 +1,5 @@
 package GenericsExamples;
 
-import javax.naming.spi.ObjectFactoryBuilder;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,8 +12,13 @@ class Car extends Vehicle {}
 class Bus extends Vehicle {}
 
 class Print {
-    public <T extends  Number> void setValue(Number val) {
+
+    public void computeList(List<? extends Number> n, List<? extends CharSequence> s) {
         //
+    }
+
+    public <T extends Number> void computeListOne(T t, T t1) {
+        System.out.println("compute");
     }
 }
 
@@ -22,12 +26,14 @@ class Print {
 public class Main {
     public static void main(String[] args) {
         List<Number> source =  new ArrayList<>();
-        List<Object> destination =  new ArrayList<>();
+        List<String> destination =  new ArrayList<>();
 
         Print print = new Print();
-        //print.computeList(source, destination);
-        
-       // print.computeListOne(source, destination); // not accepting
+        print.computeList(source, destination);
+
+        Integer n = 3;
+        String s = "jj";
+//       print.computeListOne(n, s); // now we can not pass different types.
 
     }
 }
