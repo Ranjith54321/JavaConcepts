@@ -17,11 +17,14 @@ class Print {
         //
     }
 
-    public <T extends Number> void computeListOne(T t, T t1) {
+    public <T extends Number> void computeListOne(List<T> list, T t1) {
+        System.out.println("compute");
+    }
+
+    public <T extends Number, U extends Number> void computeListTwo(T t, U u) {
         System.out.println("compute");
     }
 }
-
 
 public class Main {
     public static void main(String[] args) {
@@ -32,8 +35,10 @@ public class Main {
         print.computeList(source, destination);
 
         Integer n = 3;
+        Float f = 3.6f;
         String s = "jj";
 //       print.computeListOne(n, s); // now we can not pass different types.
+        print.computeListTwo(n, f); // now we can not pass different types.
 
     }
 }

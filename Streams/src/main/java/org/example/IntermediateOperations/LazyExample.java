@@ -29,10 +29,10 @@ public class LazyExample {
         // streamOne(); // we can not see any output / peek.
         streamTwo(); // here, terminal operation will trigger the process. That is why intermediate operations is called as Lazy
         /**
-            The Lazy nature of intermediate operations can be use full
-            -> We have stream but, we will use onl certain condition met.
-                At that time we can use the termial operation to trigger the stream and get the result.
-            -> It seems one of the approach to avoid un necessary computation.
+            The Lazy nature of intermediate operations can be useful
+            -> We have stream but, we will use only when certain condition met.
+                At that time we can use the terminal operation to trigger the stream and get the result.
+            -> It seems one of the approach to avoid unnecessary computation.
          */
     }
 
