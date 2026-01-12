@@ -1,1 +1,1 @@
-This module contains Gneric classes and Wild cards.
+This module contains Generic classes and Wild cards.
