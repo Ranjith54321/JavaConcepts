@@ -23,7 +23,7 @@ class Outer{
 
             System.out.println(" accessing outer properties b : " + b);
 
-            System.out.println(" accessing outer private properti c : " + c);
+            System.out.println(" accessing outer private properties c : " + c);
 
             m1();
         }
